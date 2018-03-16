@@ -1,0 +1,3 @@
+# ignore the following files when uploading to public github
+**/family*
+**/Cleeve*
