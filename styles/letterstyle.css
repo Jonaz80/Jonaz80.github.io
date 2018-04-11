@@ -1,0 +1,50 @@
+html {
+  font-size: 16px; /* px means 'pixels': the base font size is now 10 pixels high  */
+  font-family:"Palatino"; /*placeholder; /* this should be the rest of the output you got from Google fonts */
+  background-color: rgb(154, 155, 156);
+  /*background: gainsboro url(../images/firefox-icon.png) repeat fixed;
+  line-height: 2rem;
+  letter-spacing: 1px;*/
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-color: white /*rgb(136, 206, 247); */;
+  padding: 0 20px 20px 20px;
+  border: 1px solid black;
+}
+h1, h2 {
+  font-size: 200%;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-decoration: underline
+  /*text-shadow: 3px 3px 5px green;*/
+}
+h2 {
+  font-size: 150%;
+  text-align: left;
+}
+p, li, dd, dt {
+  /*font-size: 16px;    */
+  line-height: 1.5rem;
+}
+dt {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+.sender-column p {
+  text-align: right;
+  line-height: 1rem;
+
+}
+#addressee, #signature, article > p:first-child:first-letter {
+  font-family: 'Sofia';
+  font-size: 200%;
+  color: blueviolet
+}

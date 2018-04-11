@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Loops</title>
+    </header>
+    <body>
+        <label for='search'>Search by contact name: </label>
+        <input id = 'search' type = 'text'>
+        <button>Search</button>
+        <p></p>
+
+    </body>
+    <script>
+      var contacts = ['Chris:012538748', 'Chelsea:396735298', 'Bill:0921834295','Zane:21987348'];
+      var para = document.querySelector('p');
+      var input = document.querySelector('input');
+      var btn = document.querySelector('button');
+
+      btn.addEventListener('click', function() {
+        var searchName = input.value.toUpperCase();
+        input.value = '';
+        input.focus();
+        for (var i = 0; i < contacts.length; i++) {
+            var splitContact = contacts[i].split(':');
+            if (splitContact[0].toUpperCase() === searchName) {
+            para.textContent = splitContact[0] + '\'s number is ' + splitContact[1] + '.';
+            break;
+            } else {
+            para.textContent = 'Contact not found.';
+            }
+        }
+      });
+    </script>
+</html>
